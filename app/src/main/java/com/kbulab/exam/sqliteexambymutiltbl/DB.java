@@ -128,7 +128,8 @@ public class DB extends SQLiteOpenHelper {
         String sql = "SELECT " + tables.getTBLName3() + ".ORD_NO, " +
                 tables.getTBLName1() + ".CNAME, " +
                 tables.getTBLName2() + ".PNAME, " +
-                tables.getTBLName3() + ".QTY " +
+                tables.getTBLName3() + ".QTY, " +
+                tables.getTBLName2() + ".COST " +
                 "FROM " + tables.getTBLName3() +
                 " JOIN " + tables.getTBLName1() + " ON " + tables.getTBLName3() + ".CID = " + tables.getTBLName1() + ".CID " +
                 "JOIN " + tables.getTBLName2() + " ON " + tables.getTBLName3() + ".PID = " + tables.getTBLName2() + ".PID " +
