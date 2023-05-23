@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 String pid = cursor.getString(2);
                 int qty = cursor.getInt(3);
                 int cost = cursor.getInt(4);
-                textView.append("id: " + ordNo + ", 고객명 : " + cid + ", 상품명 : " + pid + ", 수량 : " + qty + "총 금액 : " + (qty*cost) + "\n");
+                textView.append("고객명 : " + cid + ", 상품명 : " + pid + ", 수량 : " + qty + ", 총 금액 : " + (qty*cost) + "\n");
                 cursor.moveToNext();
             }
         }
